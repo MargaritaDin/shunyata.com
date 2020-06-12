@@ -8,6 +8,7 @@
 
 $dark-color:#112027;
 $accent-color: #EB5F00;
+$accent-color2: #626262;
 $title-color: #6F6F6F;
 $light-color:white;
 $light-textcolor:#B1B1B1;
@@ -171,3 +172,105 @@ body {
     margin-top: 79px;
     }
 }
+
+.block-company {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 79px;
+    
+    &__demo2 {
+        display: block;
+        background-image: url("../img/our_company.png");
+        background-repeat: no-repeat;
+        flex-basis: 815px;
+        max-width: 815px;
+        height: 680px; 
+    }
+
+    &__block-text-middle {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 23px;
+            margin-left: 37px;
+       
+            &__title {
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 47px;
+            color: $title-color;
+            padding-right: 479px;
+            letter-spacing: 1.7px;
+          
+            &::first-letter {
+            color:$accent-color;
+            }
+        }
+
+        &__content1 {
+            padding-top: 86px;
+            color: $title-color;
+        }
+
+        &__content2 {
+            padding-top: 63px;
+            color: $title-color;
+            span {
+                color: $accent-color;
+            }
+        }
+    }
+}
+
+.block-possability {
+    &__title {
+        font-family:'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        letter-spacing: 1.7px;
+        color: $accent-color;
+        margin-top: 75px;
+        &::first-letter {
+            color: $title-color;
+        }
+    }
+    &__possability {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 49px;
+    margin-left:87px;
+
+    &__one {
+        display: inline-block;
+       
+    }
+
+    &__two {
+        display: block;
+    }
+
+    &__three {
+        display: block;
+    }
+
+}
+
+&__text {
+    font-family: 'Open Sans', sans-serif;
+    font-style: regular;
+    font-weight: bold;
+    font-size: 21px;
+    color:$accent-color2;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 13px;
+   
+    span {
+        color: $light-textcolor;
+        font-weight: normal;
+    }
+  }
+
+
+}
+
